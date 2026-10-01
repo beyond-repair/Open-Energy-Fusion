@@ -1,3 +1,19 @@
+<div align="center">
+
+[![Lifecycle](https://img.shields.io/badge/●_RESEARCH-a855f7?style=for-the-badge&labelColor=0f0f23)](https://github.com/beyond-repair/ADL-Governance)
+[![Claim](https://img.shields.io/badge/Claim_≤1-22c55e?style=for-the-badge&labelColor=0f0f23)](https://github.com/beyond-repair/ADL-Governance/blob/main/docs/CLAIM_VALIDATION.md)
+[![Governance](https://img.shields.io/badge/ADL--Governance-7c3aed?style=for-the-badge&labelColor=0f0f23)](https://github.com/beyond-repair/ADL-Governance)
+
+```
+LIFECYCLE   RESEARCH
+CLAIM       ≤1
+NOT CLAIMED thrust · energy extraction · AGI · production autonomy
+```
+
+</div>
+
+---
+
 # Open Energy Fusion
 
 **Verdict: YELLOW — INVESTIGATE**  
@@ -70,3 +86,14 @@ See `docs/CLAIM_CAP.md`. Do not quote this README as hardware evidence.
 ## License
 
 MIT. Open protocols, offline-first, no vendor lock-in in the architecture.
+
+
+---
+
+<div align="center">
+
+**REWRITE · BUILD · TRANSCEND**
+
+Governing source: [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) · [Claim levels 0–5](https://github.com/beyond-repair/ADL-Governance/blob/main/docs/CLAIM_VALIDATION.md)
+
+</div>
