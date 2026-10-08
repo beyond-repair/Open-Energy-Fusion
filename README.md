@@ -66,7 +66,7 @@ The dispatcher is not universally better. That is the point of measuring.
 ```
 src/energyos/     graph, dispatcher, simulation
 tests/            physics bounds + campaign invariants
-sim/              campaign runner + results
+sim/              campaign runner + committed results (md + json)
 docs/             architecture, prior art, safety, claims, audit
 protocols/        calibration sequence
 firmware/         placeholder — RC2 was not found
@@ -74,10 +74,30 @@ firmware/         placeholder — RC2 was not found
 
 ## Run
 
+Python 3.10+; the core has no runtime dependencies.
+
+Install and run the campaign (prints the Markdown report):
+
 ```
+python3 -m venv .venv && . .venv/bin/activate
+pip install -e ".[dev]"
+energyos                 # same as: python -m energyos
+energyos --json          # raw rows as JSON
+energyos --out /tmp/oef  # also write campaign_v0.1.{json,md} there
+python -m pytest -q
+```
+
+Without installing (what CI runs):
+
+```
+pip install -r requirements.txt
 PYTHONPATH=src python3 -m pytest tests -q
-PYTHONPATH=src python3 sim/run_campaign.py
+PYTHONPATH=src python3 sim/run_campaign.py   # regenerates sim/results/campaign_v0.1.{json,md}
 ```
+
+The committed `sim/results/` files are checked against a fresh run by
+`tests/test_cli.py`, so a model change that moves the numbers fails the
+tests until the results are regenerated and re-read.
 
 ## Claims
 
